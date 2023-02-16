@@ -9,14 +9,14 @@ const answer4 = document.querySelector('#answer4');
 function getLength(input) {
     return input.length;
 }
-function getNumberOfWords(word){
-    return word.split(' ').length - 1;
+function getNumberOfWords(word) {
+    return word.split(/\S+/).length - 1;
 }
-function getNumberOfSentece(sentences){
-    const spliters = /[.!?]/;
+function getNumberOfSentece(sentences) {
+    const spliters = /[.!?]+/;
     return sentences.split(spliters).length - 1;
 }
-function getNumberOfNumbers(numbers){
+function getNumberOfNumbers(numbers) {
     const spliters = /[1234567890]/;
     return numbers.split(spliters).length - 1;
 }

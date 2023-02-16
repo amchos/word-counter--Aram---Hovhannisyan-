@@ -1,4 +1,3 @@
-'use strick'
 const sentenceInput = document.querySelector('.input');
 
 const answer1 = document.querySelector('#answer1');
@@ -10,7 +9,7 @@ function getLength(input) {
     return input.length;
 }
 function getNumberOfWords(word) {
-    return word.split(/\S+/).length - 1;
+    return word.split(/\S+/).length -1;
 }
 function getNumberOfSentece(sentences) {
     const spliters = /[.!?]+/;
